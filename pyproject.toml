@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "querre"
+version = "0.0.0a1"
+description = "SQL-like CSV data query tool"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Shinichiro Ikeda", email = "shinichiro.ikeda@easynet.jp"}]
+license = "MIT"
+license-files = ["LICENSE", "LICENSE.ja"]
+dependencies = [
+  "pegase"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
